@@ -1,0 +1,14 @@
+# build.yaml
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          any_map: false
+          checked: false
+          create_to_json: true
+          create_factory: true
+          explicit_to_json: false
+          field_rename: snake
+        generate_for:
+          - lib/models/**.dart
